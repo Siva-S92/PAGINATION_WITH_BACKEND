@@ -11,8 +11,8 @@ export const getContents = async(req, res) => {
             const search = req.body.search;
             query = {
                 $or:[
-                    { title: { $regex: search, $options: 'i'} },
-                    { body: { $regex: search, $options: 'i'} }
+                    { name: { $regex: search, $options: 'i'} },
+                    { email: { $regex: search, $options: 'i'} }
                 ]
                 
             }

@@ -1,7 +1,7 @@
 import mongoose from "mongoose";
 
 const contentSchema = new mongoose.Schema({
-    userId: {
+    postId: {
         type: Number,
         required: true,
         trim: true,
@@ -13,7 +13,13 @@ const contentSchema = new mongoose.Schema({
         trim: true,
     },
 
-    title: {
+    name: {
+        type: String,
+        required: true,
+        trim: true,
+    },
+
+    email: {
         type: String,
         required: true,
         trim: true,
